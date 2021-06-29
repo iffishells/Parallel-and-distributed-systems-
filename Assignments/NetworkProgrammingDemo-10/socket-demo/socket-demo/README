@@ -1,0 +1,14 @@
+The folder contains two **network applications** -
+
+1. A file transfer over TCP — server transfers an image file to client, which is displayed on the terminal.
+
+2. A DNS server using UDP — client sends the domain name to server and server returns back IPs.
+
+To run these programs do following -
+
+1. ./compile.sh — this will create 4 binaries — dns_server, dns_client, file_transfer_server, file_transfer_client
+
+2. Run the server — ./file_transfer_server OR ./dns_server
+
+3. Run the client — ./file_transfer_client <IP address of server> OR ./dns_client <IP address of server>
+If server and client are running on the same machine, just use “localhost” as server IP address.
